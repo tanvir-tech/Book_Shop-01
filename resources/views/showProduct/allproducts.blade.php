@@ -30,7 +30,7 @@
 
 
 <div class="container">
-  <p>{{ $Products->links('pagination::bootstrap-4') }}</p>
+  {{-- <p>{{ $Products->links() }}</p> --}}
 </div>      
 
 @endsection

@@ -60,6 +60,7 @@ class ProductController extends Controller
             $items->last()->paginate(10);
         }
         return view('showProduct/allproducts',['Products'=>$items]);
+        // return $items;
     }
 
     function search(Request $req){

@@ -1,12 +1,18 @@
 @extends('master/master')
 @section("content")
-
+<style>
+    .bookimg {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+  }
+  </style>
 <div class="container">
     
     <div class="row p-5">
 
         <div class="col-lg-6">
-            <img src="{{asset('gallery/'.$item['gallery'])}}" alt="Product Image">
+            <img class="bookimg" src="{{asset('gallery/'.$item['gallery'])}}" alt="Product Image">
         </div>
 
         <div class="col-lg-6">
